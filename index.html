@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Does My Prescription Say?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="copy-dynamic-color.png">
+</head>
+
+<body>
+    <div class="header">
+        <h1>What does my prescription say?</h1>
+    </div>
+    <div class="section-1">
+        <div class="explain">
+            <h2 class="subtitle">What is a "SIG"?</h2>
+            <p class="explanation">A sig, short for "sig code" or "signa," is a Latin term commonly used in healthcare to specify how a medication should be taken. It provides instructions on dosage, frequency, route of administration, and duration.</p>
+            <h2 class="subtitle">Where to Find the SIG?</h2>
+            <p class="explanation">Typically, the sig is found near or under the drug name and may be preceded by terms like "Take", "Sig", or "Directions". On the prescription to the right, the SIG is, "4 mL PO TID".</p>
+            <h2 class="subtitle">The Program Will...</h2>
+            <p class="explanation">The program will interpret the entered sig and provide a user-friendly explanation of how to take the medication. For the example, the explanation would be, "4 mL by mouth three times daily."</p>
+            <a href="#section-2">
+                <button type="button">Start</button>
+            </a>
+        </div>
+        <img id="rx" src="rx.png" alt="photo of prescription">
+    </div>
+
+    <div class="sig-translation">
+        <div class="section-2">
+            <div id="section-2">
+                <label for="sig" id="sig-prompt">Your SIG</label>
+                <input type="text" title="sig" placeholder="t 1 tab 1d" id="sig">
+            </div>
+            <div class="translation">
+                <label for="sig" id="result-prompt">Result</label>
+                <input type="text" title="sig" placeholder="Take 1 tablet once daily." id="result" readonly>
+            </div>
+        </div>
+    
+        <button type="button" id="submit">Submit</button>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

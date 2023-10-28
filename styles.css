@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "Poppins-Black";
+    src: url(fonts/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: "Poppins-ExtraBold";
+    src: url(fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Poppins-ExtraLight";
+    src: url(fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Poppins-Thin";
+    src: url(fonts/Poppins-Thin.ttf);
+}
+@font-face {
+    font-family: "Rubik-Medium";
+    src: url(fonts/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: "Rubik-Regular";
+    src: url(fonts/Rubik-Regular.ttf);
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.header {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 2px 2px #a7a7a7, 
+    0px 10px 10px #6d6d6d;
+    width: 100vw;
+    margin: -1vw;
+    padding: 0.5vh;
+    padding-left: 2vw;
+    font-family: "Poppins-ExtraBold";
+    display: block;
+    margin-bottom: 2vh;
+    height: 8.5vw;
+}
+
+.header h1{
+    font-size: 3.2vw;
+    font-family: "Rubik-Medium";
+}
+
+.section-1{
+    background-color: #d8d8d8;
+    padding: 2%;
+    margin: -1vw;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#rx{
+    width: 50vw;
+    margin-left: 0.5vw;
+    margin-right: 2vw;
+}
+
+.explain{
+    width: 45vw;
+}
+
+.subtitle{
+    font-family: "Poppins-SemiBold";
+    font-size: 2.4vw;
+    margin: 0;
+}
+
+.explanation{
+    font-family: "Rubik-Medium";
+    color: #555555;
+    margin: 1vh;
+    margin-left: 0.4vw;
+    font-size: 1.4vw;
+}
+
+button {
+    font-size: 2vw;
+    margin-top: 1vw;
+    width: max-content;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border: 1px;
+    border-style: solid;
+    border-color: #a7a7a7;
+    font-family: "Rubik-Medium";
+    background-color: #3300ff;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #1100fdad;
+    color: #ffffff;
+    transition: 1s;
+}
+
+.section-2 {
+    display: flex;
+    flex-flow: column;
+}
+
+#section-2 {
+    margin-top: 3vw;
+}
+
+label {
+    margin-right: 1vw;
+    font-size: 3vw;
+    color: #000000;
+    font-family: "Rubik-Medium";
+}
+
+input {
+    width: 80vw;
+    font-size: 3vw;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    font-family: "Rubik-Regular";
+}
+
+.translation {
+    width: 100vw;
+}
+
+#result-prompt {
+    padding-right: 2.88vw;
+}
+
+#translation {
+    background-color: #ffffff;
+    border-radius: 2%;
+    align-self: center;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    margin-left: 4.8vh;
+    font-family: "Rubik-Regular";
+    color: #8b8b8b;
+    text-overflow: clip;
+}
+
+#submit {
+    color: #0a0a0a ;
+    background-color: #e6e6e6;
+    transition: 0.5s;
+}
+
+#submit:hover {
+    transition: 2s;
+    color: #3300ff ;
+    background-color: #bbbbbb;
+    transition: 0.5s;
+}
